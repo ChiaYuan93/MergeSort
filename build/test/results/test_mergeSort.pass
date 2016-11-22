@@ -4,19 +4,19 @@
   :file: test_mergeSort.c
 :successes:
 - :test: test_given_only_one_number_in_an_array_should_return_sorted_array
-  :line: 8
+  :line: 10
   :message: ''
 - :test: test_given_two_numbers_in_an_array_should_return_sorted_array
-  :line: 19
+  :line: 21
   :message: ''
 - :test: test_given_random_numbers_array_should_return_sorted_array
-  :line: 30
+  :line: 32
   :message: ''
 - :test: test_given_two_same_numbers_in_an_array_should_return_successful_sorted_array
-  :line: 41
+  :line: 43
   :message: ''
 - :test: test_given_contain_negative_numbers_in_an_array_should_return_successful_sorted_array
-  :line: 52
+  :line: 54
   :message: ''
 :failures: []
 :ignores: []

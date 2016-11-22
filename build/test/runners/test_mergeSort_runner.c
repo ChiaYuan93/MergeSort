@@ -50,11 +50,11 @@ void resetTest(void)
 int main(void)
 {
   UnityBegin("test_mergeSort.c");
-  RUN_TEST(test_given_only_one_number_in_an_array_should_return_sorted_array, 8);
-  RUN_TEST(test_given_two_numbers_in_an_array_should_return_sorted_array, 19);
-  RUN_TEST(test_given_random_numbers_array_should_return_sorted_array, 30);
-  RUN_TEST(test_given_two_same_numbers_in_an_array_should_return_successful_sorted_array, 41);
-  RUN_TEST(test_given_contain_negative_numbers_in_an_array_should_return_successful_sorted_array, 52);
+  RUN_TEST(test_given_only_one_number_in_an_array_should_return_sorted_array, 10);
+  RUN_TEST(test_given_two_numbers_in_an_array_should_return_sorted_array, 21);
+  RUN_TEST(test_given_random_numbers_array_should_return_sorted_array, 32);
+  RUN_TEST(test_given_two_same_numbers_in_an_array_should_return_successful_sorted_array, 43);
+  RUN_TEST(test_given_contain_negative_numbers_in_an_array_should_return_successful_sorted_array, 54);
 
   return (UnityEnd());
 }

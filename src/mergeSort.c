@@ -1,16 +1,7 @@
-#include "mergeSort.h"
 #include <stdio.h>
+#include "mergeSort.h"
 
-void divideArray(int *array, int arrayHead, int arraySize){
- if(arrayHead<arraySize){ 
-  int halfArray = (arrayHead+arraySize)/2;
-  divideArray(array, arrayHead, halfArray);     
-  divideArray(array, halfArray+1, arraySize);  
-  mergeSort(array, arrayHead, halfArray, arraySize);
- }
-}
-
-void mergeSort(int *array, int arrayHead, int halfArray, int arraySize){
+void mergeArray(int *array, int arrayHead, int halfArray, int arraySize){
   int x = 0, y = 0;
   int m = halfArray-arrayHead+1, n = arraySize-halfArray;
   int firstHalf[m], secondHalf[n];
@@ -40,3 +31,12 @@ void mergeSort(int *array, int arrayHead, int halfArray, int arraySize){
      array[arrayHead++] = secondHalf[y++];
   }
 } 
+
+void mergeSort(int *array, int arrayHead, int arraySize){
+  if(arrayHead<arraySize){
+    int halfArray = (arrayHead+arraySize)/2;
+    _mergeSort(array, arrayHead, halfArray);
+    _mergeSort(array, halfArray+1, arraySize);
+    mergeArray(array, arrayHead, halfArray, arraySize);
+  }
+}
